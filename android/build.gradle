@@ -14,6 +14,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenLocal()
         maven {
             url "https://maven.fabric.io/public"
         }
@@ -46,5 +47,8 @@ allprojects {
         maven {
             url "$rootDir/../node_modules/detox/Detox-android"
         }
+        maven { url 'https://maven.google.com' }
+
+        maven { url "https://www.jitpack.io" }
     }
 }

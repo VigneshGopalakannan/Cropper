@@ -26,6 +26,7 @@ def googleServicesEnabled = hasGoogleServicesSupport()
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion "27.0.3"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -42,6 +43,8 @@ android {
         testBuildType System.getProperty("testBuildType", "debug")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "boolean", "USE_FIREBASE", "${googleServicesEnabled}"
+        vectorDrawables.useSupportLibrary = true
+        targetSdkVersion 27
     }
     splits {
         abi {
