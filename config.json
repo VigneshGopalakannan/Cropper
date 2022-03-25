@@ -133,5 +133,8 @@
         "nativeOTA": {
             "enabled": false
         }
-    }
+    },
+    "appVersion": "1.0.0",
+    "buildNumber": 1,
+    "runtimeUrl": "http://localhost:8080"
 }
